@@ -1,6 +1,6 @@
 {
-  "name": "mykeyapp",
-  "productName": "mykeyapp",
+  "name": "mypasswordmanager",
+  "productName": "mypasswordmanager",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "server.js",

@@ -16,7 +16,7 @@ function createWindow () {
   });
 
   // and load the index.html of the app.
-  // mainWindow.loadFile('./public/index.html')
+  // mainWindow.loadFile('./build/index.html')
   mainWindow.loadURL('http://localhost:3000')
 
   // Open the DevTools.
@@ -76,5 +76,6 @@ expressApp.post('/data', function (req, res, next) {
 
 })
 
-expressApp.use(express.static('public'))
+expressApp.use(express.static('build'))
+// make sure to copy build folder in final out platform dir when making electron app.
 expressApp.listen(3000)
